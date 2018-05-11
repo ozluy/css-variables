@@ -1,21 +1,92 @@
+:root {
+    --color-red: #ef0d33;
+    --color-black: #111517;
+    --color-white: #fff;
+    --font-family-primary: 'Maison Nueue';
+    --font-family-headline: 'Trump Gothic East';
+    --font-weight-regular: 300;
+    --font-weight-bold: 700;
+    --font-size-headline: 36px;
+    --padding-body: 0 30px 106px 30px;
+    --media-tablet: 768px;
+    --grid-columns: 100%;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscaled;
+    text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+}
+
+html {
+    height: 100%;
+}
+
 html,
 body {
-    background-color: #111517;
-    color: #fff;
+    margin: 0;
+    font-weight: normal;
+    background-color: var(--color-black);
+}
+
+body {
+    max-width: 580px;
+    margin: 0 auto;
+    position: relative;
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-regular);
+    padding: var(--padding-body);
+    min-height: 100%;
+}
+
+h1 {
+    font-family: var(--font-family-headline);
+    font-weight: var(--font-weight-bold);
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+a {
+    color: unset;
+    text-decoration: none;
 }
 
 .grid {
     display: grid;
-    grid-template-columns: 280px 280px;
+    grid-template-columns: var(--grid-columns);
     grid-auto-rows: 140px;
     grid-gap: 20px;
     justify-content: center;
 }
 
-.item {
-    background-color: #ef0d33;
+h1 {
+    font-family: var(--font-family-headline);
+    color: var(--color-white);
 }
-.item > button{
-    background-color: #111517;
-    color: #ef0d33;
+
+main>h1 {
+    font-size: var(--font-size-headline);
+}
+
+nav a {
+    color: var(--color-red);
+}
+
+.item {
+    background-color: var(--color-red);
+}
+
+.item>button {
+    background-color: var(--color-black);
+    color: var(--color-red);
+    font-family: var(--font-family-primary);
+    font-weight: var(--font-weight-bold);
+}
+
+@media all and (min-width: var(--media-tablet)) {
+    --padding-body: 0 0 106px 0;
+    --grid-columns: 280px 280px;
 }
