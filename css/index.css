@@ -86,7 +86,11 @@ nav a {
     font-weight: var(--font-weight-bold);
 }
 
-@media all and (min-width: var(--media-tablet)) {
-    --padding-body: 0 0 106px 0;
-    --grid-columns: 280px 280px;
+@media all and (min-width: 768px) {
+    body {
+        --padding-body: 0 0 106px 0;
+    }
+    .grid {
+        --grid-columns: 280px 280px;
+    }
 }
