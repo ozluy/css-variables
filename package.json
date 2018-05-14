@@ -1,0 +1,28 @@
+{
+  "name": "css-varibles",
+  "version": "1.0.0",
+  "description": "CSS Variables",
+  "main": "index.js",
+  "scripts": {
+    "start": "node_modules/.bin/webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozluy/css-varibles.git"
+  },
+  "author": "Yusuf Ozlu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ozluy/css-varibles/issues"
+  },
+  "homepage": "https://github.com/ozluy/css-varibles#readme",
+  "devDependencies": {
+    "css-loader": "^0.28.11",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.8.3",
+    "webpack-cli": "^2.1.3",
+    "webpack-dev-server": "^3.1.4"
+  }
+}
