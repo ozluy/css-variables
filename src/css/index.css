@@ -12,22 +12,9 @@
     --grid-columns: 100%;
 }
 
-* {
-    box-sizing: border-box;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscaled;
-    text-size-adjust: 100%;
-    text-rendering: optimizeLegibility;
-}
-
-html {
-    height: 100%;
-}
 
 html,
 body {
-    margin: 0;
-    font-weight: normal;
     background-color: var(--color-black);
 }
 
@@ -86,6 +73,10 @@ nav a {
     font-weight: var(--font-weight-bold);
 }
 
+#footer-strv{
+    color: var(--color-red);
+    font-family: var(--font-family-headline);
+}
 @media all and (min-width: 768px) {
     body {
         --padding-body: 0 0 106px 0;
